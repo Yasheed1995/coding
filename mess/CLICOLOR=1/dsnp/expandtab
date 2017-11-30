@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    try {
+        char* buf = new char[512];
+        if( buf != 0 )
+            throw "Memory alloc failure";
+        cout << "haha" << endl;
+        
+    }catch (const char* str){
+        cout << "dd" << endl;
+        cout << str << endl;
+    }
+
+
+    cout << "fuck!!!!" << endl;
+}
